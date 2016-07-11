@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2453C54A1D3345B7008F2E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453C5491D3345B7008F2E4A /* AppDelegate.swift */; };
-		2453C54C1D3345B7008F2E4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453C54B1D3345B7008F2E4A /* ViewController.swift */; };
-		2453C54F1D3345B7008F2E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2453C54D1D3345B7008F2E4A /* Main.storyboard */; };
 		2453C5511D3345B7008F2E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2453C5501D3345B7008F2E4A /* Assets.xcassets */; };
 		2453C55F1D3345B7008F2E4A /* SinaWeibo_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453C55E1D3345B7008F2E4A /* SinaWeibo_SwiftTests.swift */; };
 		2453C56A1D3345B7008F2E4A /* SinaWeibo_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453C5691D3345B7008F2E4A /* SinaWeibo_SwiftUITests.swift */; };
@@ -24,6 +22,12 @@
 		2453C5911D3349F2008F2E4A /* CYMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2453C58F1D3349F2008F2E4A /* CYMessageViewController.xib */; };
 		2453C5941D334A07008F2E4A /* CYProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453C5921D334A07008F2E4A /* CYProfileViewController.swift */; };
 		2453C5951D334A07008F2E4A /* CYProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2453C5931D334A07008F2E4A /* CYProfileViewController.xib */; };
+		2453C59C1D335CEC008F2E4A /* CYNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453C59B1D335CEC008F2E4A /* CYNetworkManager.swift */; };
+		2453C5A91D336968008F2E4A /* CYAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453C5A71D336968008F2E4A /* CYAuthViewController.swift */; };
+		2453C5AA1D336968008F2E4A /* CYAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2453C5A81D336968008F2E4A /* CYAuthViewController.xib */; };
+		2453C5AC1D3369EB008F2E4A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453C5AB1D3369EB008F2E4A /* Common.swift */; };
+		2453C5B21D337486008F2E4A /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453C5B11D337486008F2E4A /* UserAccount.swift */; };
+		F625289EAF67E866C8A71BA4 /* Pods_SinaWeibo_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AC4E49017C8072A23C37D8 /* Pods_SinaWeibo_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +50,6 @@
 /* Begin PBXFileReference section */
 		2453C5461D3345B7008F2E4A /* SinaWeibo-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SinaWeibo-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2453C5491D3345B7008F2E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2453C54B1D3345B7008F2E4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2453C54E1D3345B7008F2E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2453C5501D3345B7008F2E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2453C5551D3345B7008F2E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2453C55A1D3345B7008F2E4A /* SinaWeibo-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SinaWeibo-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,15 @@
 		2453C58F1D3349F2008F2E4A /* CYMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYMessageViewController.xib; sourceTree = "<group>"; };
 		2453C5921D334A07008F2E4A /* CYProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYProfileViewController.swift; sourceTree = "<group>"; };
 		2453C5931D334A07008F2E4A /* CYProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYProfileViewController.xib; sourceTree = "<group>"; };
+		2453C59A1D335BBB008F2E4A /* SinaWeibo-Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SinaWeibo-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		2453C59B1D335CEC008F2E4A /* CYNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYNetworkManager.swift; sourceTree = "<group>"; };
+		2453C5A71D336968008F2E4A /* CYAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYAuthViewController.swift; sourceTree = "<group>"; };
+		2453C5A81D336968008F2E4A /* CYAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYAuthViewController.xib; sourceTree = "<group>"; };
+		2453C5AB1D3369EB008F2E4A /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		2453C5B11D337486008F2E4A /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		4E7250A12474611A3C42235C /* Pods-SinaWeibo-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo-Swift/Pods-SinaWeibo-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		7EBD6A6C70331F83EAA784CF /* Pods-SinaWeibo-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo-Swift/Pods-SinaWeibo-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		C0AC4E49017C8072A23C37D8 /* Pods_SinaWeibo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SinaWeibo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F625289EAF67E866C8A71BA4 /* Pods_SinaWeibo_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +113,8 @@
 				2453C55D1D3345B7008F2E4A /* SinaWeibo-SwiftTests */,
 				2453C5681D3345B7008F2E4A /* SinaWeibo-SwiftUITests */,
 				2453C5471D3345B7008F2E4A /* Products */,
+				9054BBA7AFB51253071F6F27 /* Pods */,
+				56A579A91B11C5CE5D4BB1FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,8 +133,6 @@
 			children = (
 				2453C5771D334748008F2E4A /* Classes */,
 				2453C5491D3345B7008F2E4A /* AppDelegate.swift */,
-				2453C54B1D3345B7008F2E4A /* ViewController.swift */,
-				2453C54D1D3345B7008F2E4A /* Main.storyboard */,
 				2453C5501D3345B7008F2E4A /* Assets.xcassets */,
 				2453C5551D3345B7008F2E4A /* Info.plist */,
 			);
@@ -206,7 +218,12 @@
 		2453C57D1D334748008F2E4A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				2453C5AB1D3369EB008F2E4A /* Common.swift */,
+				2453C5B11D337486008F2E4A /* UserAccount.swift */,
 				2453C5801D33496B008F2E4A /* CYTabbarController.swift */,
+				2453C5A81D336968008F2E4A /* CYAuthViewController.xib */,
+				2453C5A71D336968008F2E4A /* CYAuthViewController.swift */,
+				2453C59A1D335BBB008F2E4A /* SinaWeibo-Swift-Bridging-Header.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -223,8 +240,26 @@
 		2453C57F1D334748008F2E4A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2453C59B1D335CEC008F2E4A /* CYNetworkManager.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		56A579A91B11C5CE5D4BB1FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0AC4E49017C8072A23C37D8 /* Pods_SinaWeibo_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9054BBA7AFB51253071F6F27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E7250A12474611A3C42235C /* Pods-SinaWeibo-Swift.debug.xcconfig */,
+				7EBD6A6C70331F83EAA784CF /* Pods-SinaWeibo-Swift.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2453C56E1D3345B7008F2E4A /* Build configuration list for PBXNativeTarget "SinaWeibo-Swift" */;
 			buildPhases = (
+				FCDD7DE6A9A5536345257A65 /* [CP] Check Pods Manifest.lock */,
 				2453C5421D3345B7008F2E4A /* Sources */,
 				2453C5431D3345B7008F2E4A /* Frameworks */,
 				2453C5441D3345B7008F2E4A /* Resources */,
+				A35352A71E153DAC1017C1BD /* [CP] Embed Pods Frameworks */,
+				74D4F5F1CAD74DA5840DAF0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,8 +373,8 @@
 				2453C5891D3349C9008F2E4A /* DiscoverViewController.xib in Resources */,
 				2453C5951D334A07008F2E4A /* CYProfileViewController.xib in Resources */,
 				2453C5911D3349F2008F2E4A /* CYMessageViewController.xib in Resources */,
-				2453C54F1D3345B7008F2E4A /* Main.storyboard in Resources */,
 				2453C5851D3349B4008F2E4A /* HomeViewController.xib in Resources */,
+				2453C5AA1D336968008F2E4A /* CYAuthViewController.xib in Resources */,
 				2453C58D1D3349DA008F2E4A /* CYComposeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +395,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74D4F5F1CAD74DA5840DAF0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinaWeibo-Swift/Pods-SinaWeibo-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A35352A71E153DAC1017C1BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinaWeibo-Swift/Pods-SinaWeibo-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCDD7DE6A9A5536345257A65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2453C5421D3345B7008F2E4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -364,11 +450,14 @@
 			files = (
 				2453C5811D33496B008F2E4A /* CYTabbarController.swift in Sources */,
 				2453C58C1D3349DA008F2E4A /* CYComposeViewController.swift in Sources */,
+				2453C59C1D335CEC008F2E4A /* CYNetworkManager.swift in Sources */,
+				2453C5A91D336968008F2E4A /* CYAuthViewController.swift in Sources */,
+				2453C5B21D337486008F2E4A /* UserAccount.swift in Sources */,
 				2453C5901D3349F2008F2E4A /* CYMessageViewController.swift in Sources */,
-				2453C54C1D3345B7008F2E4A /* ViewController.swift in Sources */,
 				2453C5941D334A07008F2E4A /* CYProfileViewController.swift in Sources */,
 				2453C54A1D3345B7008F2E4A /* AppDelegate.swift in Sources */,
 				2453C5841D3349B4008F2E4A /* HomeViewController.swift in Sources */,
+				2453C5AC1D3369EB008F2E4A /* Common.swift in Sources */,
 				2453C5881D3349C9008F2E4A /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,17 +492,6 @@
 			targetProxy = 2453C5661D3345B7008F2E4A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2453C54D1D3345B7008F2E4A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2453C54E1D3345B7008F2E4A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2453C56C1D3345B7008F2E4A /* Debug */ = {
@@ -499,25 +577,32 @@
 		};
 		2453C56F1D3345B7008F2E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E7250A12474611A3C42235C /* Pods-SinaWeibo-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "SinaWeibo-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weibo.test.SinaWeibo-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SinaWeibo-Swift/Classes/Other/SinaWeibo-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		2453C5701D3345B7008F2E4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EBD6A6C70331F83EAA784CF /* Pods-SinaWeibo-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "SinaWeibo-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weibo.test.SinaWeibo-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SinaWeibo-Swift/Classes/Other/SinaWeibo-Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -588,6 +673,7 @@
 				2453C5701D3345B7008F2E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2453C5711D3345B7008F2E4A /* Build configuration list for PBXNativeTarget "SinaWeibo-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -596,6 +682,7 @@
 				2453C5731D3345B7008F2E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2453C5741D3345B7008F2E4A /* Build configuration list for PBXNativeTarget "SinaWeibo-SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -604,6 +691,7 @@
 				2453C5761D3345B7008F2E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
